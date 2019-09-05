@@ -1,0 +1,15 @@
+<h1>Hello World!</h1>
+<script>
+function submit(){
+    var firstName = window.document.getElementById("firstName").value;
+    var lastName = window.document.getElementById("lastName").value;
+    window.document.getElementById("userName").innerHTML = firstName + " " + lastName;
+}
+</script>
+<div id="form">
+    <input type="text" id="firstName"/>
+    <input type="text" id="lastName"/>
+    <input  id="btnSubmit" type="button" onclick="submit()"/>
+</div>
+<span id="userName"></span>
+
